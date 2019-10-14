@@ -7,7 +7,10 @@ var express = require('express'),
 	app = express();
 
 // DB Connect String
-var connect = "postgres://eduonix:cf11611e@localhost:5432/recipebookdb";
+//var connect = "postgres://eduonix:cf11611e@localhost:5432/recipebookdb";
+
+// heroku DB Connect String
+var connect = "postgres://ihzviocpyizqpa:b0bf7adaffa405f54756c1b89410052fbeb61eaa125981ff19578bd858b88b4e@ec2-54-247-72-30.eu-west-1.compute.amazonaws.com:5432/d71rubrrhkp52k"
 
 // Assign Dust Engine To .dust Files
 app.engine('dust', cons.dust);
